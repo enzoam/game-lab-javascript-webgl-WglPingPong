@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Game</title>
+		<style>
+			body {
+				background-color: black;
+			}
+			#gameCanvas {
+				background-color: black;
+				width: 800px;
+				height: 360px;
+				margin: auto;
+				align: center;
+			}
+			#cabecalho {
+				text-align: center;
+				font-family: sans-serif;
+				color: white;
+			}
+			#scores {
+				font-size:600%; 
+				padding:0; 
+				margin:0;
+				color: white;
+			}
+			#title {
+				color: WHITE;
+			}
+            #credits {
+                font-size:100%;
+                padding:0;
+                margin:0;
+                color: yellow;
+            }
+            #rodape {
+                text-align: center;
+                font-family: sans-serif;
+                color: yellow;
+            }
+		</style>
+	</head>
+	<body onload='setup();'>
+            <div id='cabecalho'>
+                <h2 id='scores'>0-0</h2>
+                <h2 id='title'>WGL PING PONG</h2>
+            </div>
+            <div id='gameCanvas'></div>
+            <script src='three.min.js'></script>
+            <script src='keyboard.js'></script>
+            <script src='game.js'></script>
+            <div id='rodape'>
+                <h2 id='winnerBoard'>OBJETIVO 10 ACERTOS - A (ESQUERDA) - D (DIREITA)</h2>
+                <h1 id='credits'>Enzo A. Marchiorato - PUC PR - 2014 - Programacao de Jogos 3D I</h1>
+		    </div>
+	</body>
+</html>
